@@ -1,0 +1,136 @@
+
+html, body {
+
+    color:#141415;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    min-height: 100vh;
+    line-height: 40px;
+    font-size: 20px;
+   
+}
+   
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff6da
+    
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: gold;
+    text-align: center;
+    line-height: 300px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+/*** Top section ***/
+
+#top-section {
+    background-image: url(assets/header-pic.jpg);
+    background-color:#fbc99d;
+    height: 470px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    color: #fffdf9;
+    position: relative;
+    font-weight: bold;
+   font-size: 25px;
+
+}
+
+.title {
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+
+}
+
+.title .icon {
+    padding: 10px;
+    height: 34px;
+}
+
+
+.profile-img {
+    height: 200px;
+    width: 200px;
+    border-style: solid ;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -45px;
+    right: 200px;
+} 
+
+
+
+#top-section,
+#summary-section,
+#tech-section,
+#featured-projects-section,
+#other-projects-section,
+#my-thoughts-section,
+#skills-section {
+    width: 1250px;
+    padding: 20px;
+    align-self: center;
+}
+
+
+/*** Summary section ***/ 
+
+#summary-section {
+    background-color:#fbc99d;
+}
+
+/*** tech section ***/ 
+
+#tech-section {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+#tech-section h2 { 
+    display: inline-block;
+    background-color: #ed1250;
+    color: #fff6da;
+    width: fit-content;
+    align-self: center;
+    
+    
+} 
+
+#featured-projects-section {
+
+    background-color: crimson;;
+} 
+
+#other-projects-section {
+
+    background-color: darkkhaki;
+
+} 
+
+#my-thoughts-section {
+    background-color: darkorange;
+} 
+
+#skills-section {
+
+    background-color: deeppink;
+}
