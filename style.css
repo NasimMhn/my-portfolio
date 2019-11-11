@@ -1,23 +1,12 @@
 
-html, body {
-
+body {
     color:#141415;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     min-height: 100vh;
-    line-height: 40px;
     font-size: 20px;
-   
 }
    
-
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff6da
-    
-}
 
 footer {
     height: 300px;
@@ -36,9 +25,22 @@ h1 {
     font-size: xx-large;
 }
 
+h2 { 
+    background-color: #ed1250;
+    color: #fff6da;
+    align-self: center;
+    display: inline-block;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 15px;
+}
+
+
 /*** Top section ***/
 
-#top-section {
+header {
     background-image: url(assets/header-pic.jpg);
     background-color:#fbc99d;
     height: 470px; /* You must set a specified height */
@@ -76,54 +78,44 @@ h1 {
 } 
 
 
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff6da;    
+}
 
-#top-section,
 #summary-section,
 #tech-section,
 #featured-projects-section,
 #other-projects-section,
 #my-thoughts-section,
 #skills-section {
-    width: 1250px;
+    width: auto;
     padding: 20px;
     align-self: center;
 }
 
 
-/*** Summary section ***/ 
+
 
 #summary-section {
     background-color:#fbc99d;
 }
 
-/*** tech section ***/ 
-
 #tech-section {
-    display: flex;
-    flex-direction: column;
-
-    
+    width: 70%;
+    background-color: lightgreen;
+    text-align: center;
 }
 
-#tech-section h2 { 
-    display: inline-block;
-    background-color: #ed1250;
-    color: #fff6da;
-    width: fit-content;
-    align-self: center;
-    
-    
-} 
-
 #featured-projects-section {
-
-    background-color: crimson;;
-} 
+    background-color:#fbc99d;
+    display: flex;
+    flex-direction: column;
+}
 
 #other-projects-section {
-
     background-color: darkkhaki;
-
 } 
 
 #my-thoughts-section {
@@ -131,6 +123,61 @@ h1 {
 } 
 
 #skills-section {
-
     background-color: deeppink;
 }
+
+.cards-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+} 
+
+.project-card {
+    background-color: red;
+    width: 300px;
+    margin: 10px 10px;
+}
+.project-card figcaption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;;
+    color:#042f4b ;
+    background-color: #fff6dade;
+    border-radius: 10px;
+} 
+
+.card-img {
+    height: 200px;
+    width: 300px;
+
+} 
+
+figure {
+    margin: 0px;
+    position: relative;
+}
+
+.project-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description {
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    font-size: 14px;
+    justify-items: center;
+}
+
+.project-description div {
+    border: black 1px solid;
+    padding: 0px 5px;
+}
+
