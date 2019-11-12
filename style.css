@@ -11,9 +11,11 @@ body {
 footer {
     height: 300px;
     width: 100%;
-    background-color: gold;
+    background-color:#042f4b;
     text-align: center;
-    line-height: 300px;
+    color: #fbc99d;
+    line-height: 50px;
+
 }
 
 h1, h2, h3 {
@@ -106,7 +108,24 @@ header {
 
 #summary-section {
     background-color:#fbc99d;
+} 
+
+.pitch-div {
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
 }
+
+ .my-pitch {
+   line-height: 30px;
+   width: 60%;
+   text-align: center;
+   margin-top: 25px;
+   
+} 
+
+
+
 
 #tech-section {
     width: 70%;
@@ -187,9 +206,9 @@ figure {
 
 
 #other-projects-section {  
-        display: flex;
-        flex-direction: column;
-        height: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 } 
 
 a:link {
@@ -263,12 +282,21 @@ a:link {
 }
 
 
-/* 
+
 #skills-section {
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     
-} */
+} 
 
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 50px;
+    line-height: 40px;
+}
+ 
 
 
 
