@@ -30,6 +30,7 @@ h2 {
     color: #fff6da;
     align-self: center;
     display: inline-block;
+    border-radius: 5px;
 }
 
 h4 {
@@ -110,6 +111,7 @@ header {
     display: flex;
     flex-direction: column;
     width: auto;
+    height: auto;
 } 
 
 .cards-container { 
@@ -124,7 +126,7 @@ header {
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    font-size: 18px;
     width: 300px;
     margin: 10px 10px;
 }  
@@ -162,42 +164,78 @@ figure {
     row-gap: 5px;
     font-size: 15px;
     column-gap: 5px;
+    margin-top: 20px;
   
    
 } 
-
-
-.project-card-info {
-    display: flex;
-   flex-direction: column;
-   
-} 
-
 
 .project-description div {
     border:  #ed1250 1px solid;
     margin: 0%;
     padding: 0px 5px;
-}  
+}   
+
+.project-card-info {
+    line-height: 30px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#other-projects-section {
-    background-color: darkkhaki;
+#other-projects-section {  
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
 } 
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #042f4b;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #ed1250;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  } 
+
+
+  .other-projects-info .project-description {
+      display: block;
+      margin-bottom: 20px;
+
+
+}
+
+
+  .other-projects .project-description div {
+    display: inline-block;
+    border:  #ed1250 1px solid;
+    margin: 0%;
+    width: fit-content;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #my-thoughts-section {
     background-color: darkorange;
