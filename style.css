@@ -38,7 +38,7 @@ h4 {
 }
 
 
-/*** Top section ***/
+/*** Header ***/
 
 header {
     background-image: url(assets/header-pic.jpg);
@@ -96,15 +96,12 @@ header {
 }
 
 
-
-
 #summary-section {
     background-color:#fbc99d;
 }
 
 #tech-section {
     width: 70%;
-    background-color: lightgreen;
     text-align: center;
 }
 
@@ -112,7 +109,91 @@ header {
     background-color:#fbc99d;
     display: flex;
     flex-direction: column;
+    width: auto;
+} 
+
+.cards-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}   
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: 10px 10px;
+}  
+ 
+
+.card-img {
+    height: 200px;
+    width: 300px;
+
+} 
+
+
+figure {
+    margin: 0px;
+    position: relative;
 }
+
+.project-card figcaption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;;
+    color:#042f4b ;
+    background-color: #fff6dade;
+    border-radius: 10px;
+}    
+
+
+
+.project-description {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    font-size: 15px;
+    column-gap: 5px;
+  
+   
+} 
+
+
+.project-card-info {
+    display: flex;
+   flex-direction: column;
+   
+} 
+
+
+.project-description div {
+    border:  #ed1250 1px solid;
+    margin: 0%;
+    padding: 0px 5px;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #other-projects-section {
     background-color: darkkhaki;
@@ -126,58 +207,15 @@ header {
     background-color: deeppink;
 }
 
-.cards-container { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 
-} 
 
-.project-card {
-    background-color: red;
-    width: 300px;
-    margin: 10px 10px;
-}
-.project-card figcaption {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 400;;
-    color:#042f4b ;
-    background-color: #fff6dade;
-    border-radius: 10px;
-} 
 
-.card-img {
-    height: 200px;
-    width: 300px;
 
-} 
 
-figure {
-    margin: 0px;
-    position: relative;
-}
 
-.project-card-info {
-    display: flex;
-    flex-direction: column;
-}
 
-.project-description {
-    background-color: lightgreen;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 5px;
-    font-size: 14px;
-    justify-items: center;
-}
 
-.project-description div {
-    border: black 1px solid;
-    padding: 0px 5px;
-}
+
+
+
 
