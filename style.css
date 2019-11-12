@@ -51,7 +51,7 @@ header {
     color: #fffdf9;
     position: relative;
     font-weight: bold;
-   font-size: 25px;
+    font-size: 25px;
 
 }
 
@@ -110,7 +110,6 @@ header {
     background-color:#fbc99d;
     display: flex;
     flex-direction: column;
-    width: auto;
     height: auto;
 } 
 
@@ -121,7 +120,6 @@ header {
     flex-wrap: wrap;
 
 }   
-
 
 .project-card {
     display: flex;
@@ -184,7 +182,6 @@ figure {
 #other-projects-section {  
         display: flex;
         flex-direction: column;
-        width: auto;
         height: auto;
 } 
 
@@ -211,9 +208,7 @@ a:link {
       display: block;
       margin-bottom: 20px;
 
-
 }
-
 
   .other-projects .project-description div {
     display: inline-block;
@@ -223,23 +218,57 @@ a:link {
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #my-thoughts-section {
-    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    background-color:#fbc99d; 
+
+}  
+  
+.my-thoughts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+
 } 
+
+.article-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:auto;
+    max-width: 500px;
+
+}
+
+.article-img {
+    height: 200px;
+    width: 300px;
+
+}    
+
+.article-caption {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #skills-section {
     background-color: deeppink;
