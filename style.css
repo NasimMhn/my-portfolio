@@ -36,6 +36,13 @@ h2 {
 h4 {
     margin: 0px;
     font-size: 15px;
+} 
+
+h5 { 
+    color: #ed1250;
+    align-self: center;
+    margin: 0%;
+
 }
 
 
@@ -256,23 +263,24 @@ a:link {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
 #skills-section {
-    background-color: deeppink;
-}
+
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
