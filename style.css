@@ -18,14 +18,24 @@ footer {
 
 }
 
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff6da;    
 }
 
 h1 {
-    font-size: xx-large;
+    font-weight: 500;
+    margin: 15px 0;
+    text-shadow: -1px 0px #fd7792, 0px 1px #fd7792, 1px 0px #fd7792, 0px -1px #fd7792;
 }
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #FDDFE7;
+   
+}
+
 
 h2 { 
     background-color: #ed1250;
@@ -37,7 +47,8 @@ h2 {
 
 h4 {
     margin: 0px;
-    font-size: 15px;
+    font-size: 20px;
+    color: #FDDFE7;
 } 
 
 h5 { 
@@ -51,11 +62,11 @@ h5 {
 /*** Header ***/
 
 header {
-    background-image: url(assets/header-pic.jpg);
+    background-image: url(assets/hero\ image.jpg);
     background-color:#fbc99d;
-    height: 470px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-size: cover; 
     color: #fffdf9;
     position: relative;
@@ -67,13 +78,14 @@ header {
 .title {
     position: absolute;
     bottom: 0px;
-    left: 70px;
+    left: 25px;
 
 }
 
 .title .icon {
-    padding: 10px;
-    height: 34px;
+    padding: 5px;
+    height: 50px;
+    margin-top: 20px;
 }
 
 
@@ -88,11 +100,7 @@ header {
 } 
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff6da;    
-}
+
 
 #summary-section,
 #tech-section,
@@ -105,6 +113,7 @@ header {
     align-self: center;
 }
 
+/*** SUMMARY SECTION ***/
 
 #summary-section {
     background-color:#fbc99d;
@@ -124,13 +133,15 @@ header {
    
 } 
 
-
+/*** TECH SECTION ***/
 
 
 #tech-section {
     width: 70%;
     text-align: center;
 }
+
+/*** FEATURED SECTION ***/
 
 #featured-projects-section {
     background-color:#fbc99d;
@@ -174,10 +185,11 @@ figure {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: 400;;
+    font-weight: 600;
     color:#042f4b ;
-    background-color: #fff6dade;
+    background-color:#ececeb;
     border-radius: 10px;
+    padding: 5px;
 }    
 
 
@@ -189,21 +201,34 @@ figure {
     font-size: 15px;
     column-gap: 5px;
     margin-top: 20px;
-  
    
 } 
 
-.project-description div {
-    border:  #ed1250 1px solid;
-    margin: 0%;
-    padding: 0px 5px;
-}   
 
 .project-card-info {
     line-height: 30px;
+    
+} 
+
+
+.test{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
+.project-description div {
+    background-color:#ed125062;
+    border:  #ed1250 1px solid; 
+    margin: 0%;
+    padding: 0px 5px;
+    color:#042f4b;
+    text-align: center;
+    border-radius: 5px;
+}   
 
+
+
+/*** OTHER PROJECTS SECTION ***/
 
 #other-projects-section {  
     display: flex;
@@ -243,6 +268,7 @@ a:link {
     width: fit-content;
 
   }
+/*** MY THOUGHTS SECTION ***/
 
 #my-thoughts-section {
     display: flex;
@@ -282,6 +308,7 @@ a:link {
 }
 
 
+/*** SKILLS SECTION ***/
 
 #skills-section {
     display: flex;
