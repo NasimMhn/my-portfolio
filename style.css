@@ -11,7 +11,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #fff6da;    
+    background-color: #fff;    
 }
 
 
@@ -57,7 +57,13 @@ h5 {
 
 }
 
+.text-highlight {
+    color: #ed1250;
+    font-weight: 700;
+}
+
 p{
+    font-size: 22px;
     line-height: 1.5;
 }
 
@@ -134,14 +140,15 @@ header {
 #my-thoughts-section,
 #skills-section {
     width: auto;
-    padding: 20px;
-    align-self: center;
+    padding: 50px 30px;
+    margin: 0 auto;
+ 
 }
 
 /*** SUMMARY SECTION ***/
 
 #summary-section {
-    background-color:#fbc99d;
+    background: #EFEBE9;
 } 
 
 .pitch-div {
@@ -151,11 +158,10 @@ header {
 }
 
  .my-pitch {
-   line-height: 30px;
+   line-height: 35px;
    width: 60%;
-   text-align: center;
-   margin-top: 25px;
-    text-orientation: sideways-right;
+   text-align: left;
+   font-family: 'Montserrat', sans-serif;
    
 } 
 
@@ -167,10 +173,15 @@ header {
     text-align: center;
 }
 
+#tech-section p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 /*** FEATURED SECTION ***/
 
 #featured-projects-section {
-    background-color:#fbc99d;
+    background-color:#EFEBE9;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -188,14 +199,15 @@ header {
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    width: 300px;
+    width: 400px;
     margin: 10px 10px;
 }  
  
 
 .card-img {
-    height: 200px;
-    width: 300px;
+   
+    width: 100%;
+    height: 250px;
 
 } 
 
@@ -211,9 +223,8 @@ figure {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: 600;
-    color:#042f4b ;
-    background-color:#ececeb;
+    font-weight: 700;
+    color:#fff ;
     border-radius: 10px;
     padding: 5px;
 }    
