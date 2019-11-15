@@ -23,11 +23,14 @@ h1 {
 }
 
 h2 { 
+    font-family: 'Montserrat', sans-serif;
     background-color: #ed1250;
     color: #fff6da;
     align-self: center;
     display: inline-block;
     border-radius: 10px;
+    margin: 0 0 50px 0;
+   
 }
 
 h3 { 
@@ -38,11 +41,10 @@ h3 {
 h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 700;
     margin: 10px 0;
-    color: #fff;
     margin: 5px 0;
-    letter-spacing: 1.2px;
+    /* letter-spacing: 1.2px; */
 } 
 
 h5 { 
@@ -51,6 +53,7 @@ h5 {
     margin: 0%;
 
 }
+
 .highlight {
 
     font-weight: 700;
@@ -229,38 +232,28 @@ figure {
     padding: 5px;
 }    
 
+.project-card-info .project-tags {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 14px;
 
 
-.project-description {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 5px;
-    font-size: 15px;
-    column-gap: 5px;
-    margin-top: 20px;
-   
-} 
-
-
-.project-card-info {
-    line-height: 30px;
-    
-} 
-
-
-.test{
-    grid-column-start: 1;
-    grid-column-end: 4;
 }
 
-.project-description div {
-    background-color:#ed125062;
-    margin: 0%;
-    padding: 0px 5px;
-    color:#fff6da;
+.project-card-info {
+    line-height: 25px;
+    margin-top: 15px;
+} 
+
+.project-card-info .project-tags div {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 6px 6px;
     text-align: center;
     border-radius: 5px;
-}   
+    background-color:#ed125045;
+  }
+
 
 
 
@@ -291,26 +284,28 @@ a:link {
   } 
 
 
-  .other-projects-info .project-description {
+  .other-projects-info .project-tags {
       display: block;
-      margin-bottom: 20px;
+      margin: 20px 0;
+      font-size: 14px;
 
 }
 
-  .other-projects .project-description div {
+  .other-projects .project-tags div {
     display: inline-block;
     margin: 0%;
-    width: fit-content;
     padding: 6px 6px;
     text-align: center;
     border-radius: 5px;
+    background-color:#ed125045;
   }
+  
 /*** MY THOUGHTS SECTION ***/
 
 #my-thoughts-section {
     display: flex;
     flex-direction: column;
-    background-color:#fbc99d; 
+    background-color:#EFEBE9; 
 
 }  
   
@@ -327,21 +322,30 @@ a:link {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width:auto;
-    max-width: 500px;
+    width: 400px;
+    margin: 0px 8px;
 
 }
 
 .article-img {
     height: 200px;
-    width: 300px;
+    width: 400px;
 
 }    
 
+.article-headline {
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+
+
 .article-caption {
-    text-align: center;
-    line-height: 30px;
-    margin-top: 20px;
+    margin: 15px 0;
+    color: #000;
+    line-height: 1.5;
+
 }
 
 
@@ -362,22 +366,28 @@ a:link {
 }
  
 
+/*** FOOTER SECTION ***/
+
 
 footer .icon-container {
    position: unset;
+   margin-top: 20px;
     
 }
-
-
-
 
 footer {
     height: 400px;
     width: 100%;
+    margin: 0;
+    padding: 30px 0;
     background-color:#042f4b;
     text-align: center;
     color: #fbc99d;
-    line-height: 50px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
