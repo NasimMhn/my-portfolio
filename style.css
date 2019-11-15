@@ -1,21 +1,12 @@
 
 body {
-    color:#141415;
-    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     min-height: 100vh;
     font-size: 20px;
 }
    
-
-footer {
-    height: 400px;
-    width: 100%;
-    background-color:#042f4b;
-    text-align: center;
-    color: #fbc99d;
-    line-height: 50px;
-}
 
 .container {
     display: flex;
@@ -23,13 +14,11 @@ footer {
     background-color: #fff6da;    
 }
 
-h1, h2, h3, h4 {
-    color: #FDDFE7;
-}
 
 h1 {
-    font: bold 100px;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    margin: 5px 0;
   
 }
 
@@ -47,7 +36,13 @@ h3 {
 
 }
 h4 {
-    font: bold 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: #fff;
+    margin: 5px 0;
+    letter-spacing: 1.2px;
 } 
 
 h5 { 
@@ -56,7 +51,15 @@ h5 {
     margin: 0%;
 
 }
+.highlight {
 
+    font-weight: 700;
+
+}
+
+p{
+    line-height: 1.5;
+}
 
 /*** Header ***/
 
@@ -67,47 +70,58 @@ header {
     background-repeat: no-repeat; 
     background-size: cover; 
     height: 500px;
-    color: #fffdf9;
+    color: #FFF;
     position: relative;
     display: flex;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    justify-content: flex-end;
-    margin-left: 70px;
-  
+    position: absolute; 
+    top: 170px;
+    left: 12%;
+    width: 35%; 
 }
+
+.title p {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+     margin-top: 0;
+
+}
+
+
 
 .icon-container {
     display: flex;
-    height: 60px;
+    height: 70px;
     position: absolute;
-    top: 150px;
+    top: 110px;
     right: 200px; 
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    cursor: pointer;
 }
 
+
+
  .profile-img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-style: solid ;
     border-radius: 50%; 
     position: absolute;
-    position: absolute;
-    top: 310px;
+    top: 250px;
     right: 200px;
 
 } 
@@ -346,7 +360,14 @@ footer .icon-container {
 
 
 
-
+footer {
+    height: 400px;
+    width: 100%;
+    background-color:#042f4b;
+    text-align: center;
+    color: #fbc99d;
+    line-height: 50px;
+}
 
 
 
