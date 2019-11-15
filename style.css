@@ -30,29 +30,35 @@ h2 {
     display: inline-block;
     border-radius: 10px;
     margin: 0 0 50px 0;
+    font-size: 35px;
    
 }
 
 h3 { 
-    font-family: 'Roboto';
-    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ed1250;
 
 }
+
 h4 {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     margin: 10px 0;
     margin: 5px 0;
-    /* letter-spacing: 1.2px; */
+    letter-spacing: 1.2px; 
+    color: #ed1250;
 } 
 
-h5 { 
+/* h5 { 
     color: #ed1250;
     align-self: center;
     margin: 0%;
 
-}
+} */
 
 .highlight {
 
@@ -68,6 +74,10 @@ h5 {
 p{
     font-size: 22px;
     line-height: 1.5;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /*** Header ***/
@@ -100,7 +110,13 @@ header {
 
 }
 
-
+.title h4 {
+    color: #FFF;
+    letter-spacing: 1.2px;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 5px 0;
+}
 
 .icon-container {
     display: flex;
@@ -337,7 +353,6 @@ a:link {
     color: #000;
     font-size: 21px;
     font-weight: 700;
-    text-transform: uppercase;
 } 
 
 
@@ -347,6 +362,9 @@ a:link {
     line-height: 1.5;
 
 }
+
+
+
 
 
 /*** SKILLS SECTION ***/
@@ -365,13 +383,23 @@ a:link {
     line-height: 40px;
 }
  
+.skills-container h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #ed1250;
+} 
+
+
+
+
 
 /*** FOOTER SECTION ***/
 
-
 footer .icon-container {
    position: unset;
-   margin-top: 20px;
+   margin-top: 30px;
     
 }
 
@@ -389,6 +417,17 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+footer h3 {
+    color: #FFF;
+    font-size: 32px;
+  }
+  
+  footer h4, footer p, .my-emil {
+    color: #FFF;
+    margin: 8px 0;
+  }
+  
 
 
 
