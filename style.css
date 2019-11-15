@@ -9,13 +9,12 @@ body {
    
 
 footer {
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-color:#042f4b;
     text-align: center;
     color: #fbc99d;
     line-height: 50px;
-
 }
 
 .container {
@@ -24,31 +23,31 @@ footer {
     background-color: #fff6da;    
 }
 
-h1 {
-    font-weight: 500;
-    margin: 15px 0;
-    text-shadow: -1px 0px #fd7792, 0px 1px #fd7792, 1px 0px #fd7792, 0px -1px #fd7792;
-}
-
 h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
     color: #FDDFE7;
-   
 }
 
+h1 {
+    font: bold 100px;
+    margin: 0;
+  
+}
 
 h2 { 
     background-color: #ed1250;
     color: #fff6da;
     align-self: center;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
+h3 { 
+    font-family: 'Roboto';
+    font-weight: lighter;
+
+}
 h4 {
-    margin: 0px;
-    font-size: 20px;
-    color: #FDDFE7;
+    font: bold 50px;
 } 
 
 h5 { 
@@ -64,42 +63,54 @@ h5 {
 header {
     background-image: url(assets/hero\ image.jpg);
     background-color:#fbc99d;
-    height: 500px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+    height: 500px;
     color: #fffdf9;
     position: relative;
-    font-weight: bold;
-    font-size: 25px;
-
+    display: flex;
 }
 
 .title {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: flex-end;
+    margin-left: 70px;
+  
+}
+
+.icon-container {
+    display: flex;
+    height: 60px;
     position: absolute;
-    bottom: 0px;
-    left: 25px;
-
+    top: 150px;
+    right: 200px; 
 }
 
-.title .icon {
-    padding: 5px;
+.icon {
+    width: 50px;
     height: 50px;
-    margin-top: 20px;
+    border-radius: 100%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
 }
 
-
-.profile-img {
+ .profile-img {
     height: 200px;
     width: 200px;
     border-style: solid ;
-    border-radius: 50%;
+    border-radius: 50%; 
     position: absolute;
-    bottom: -45px;
+    position: absolute;
+    top: 310px;
     right: 200px;
+
 } 
-
-
 
 
 #summary-section,
@@ -130,6 +141,7 @@ header {
    width: 60%;
    text-align: center;
    margin-top: 25px;
+    text-orientation: sideways-right;
    
 } 
 
@@ -161,7 +173,7 @@ header {
 .project-card {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 20px;
     width: 300px;
     margin: 10px 10px;
 }  
@@ -218,10 +230,9 @@ figure {
 
 .project-description div {
     background-color:#ed125062;
-    border:  #ed1250 1px solid; 
     margin: 0%;
     padding: 0px 5px;
-    color:#042f4b;
+    color:#fff6da;
     text-align: center;
     border-radius: 5px;
 }   
@@ -263,10 +274,11 @@ a:link {
 
   .other-projects .project-description div {
     display: inline-block;
-    border:  #ed1250 1px solid;
     margin: 0%;
     width: fit-content;
-
+    padding: 6px 6px;
+    text-align: center;
+    border-radius: 5px;
   }
 /*** MY THOUGHTS SECTION ***/
 
@@ -326,6 +338,10 @@ a:link {
  
 
 
+footer .icon-container {
+   position: unset;
+    
+}
 
 
 
