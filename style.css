@@ -14,6 +14,17 @@ body {
     background-color: #fff;    
 }
 
+#summary-section,
+#tech-section,
+#featured-projects-section,
+#other-projects-section,
+#my-thoughts-section,
+#skills-section {
+    width: auto;
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -30,6 +41,7 @@ h2 {
     display: inline-block;
     border-radius: 10px;
     margin: 0 0 50px 0;
+    padding: 0px 10px;
     font-size: 35px;
    
 }
@@ -40,7 +52,6 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
     color: #ed1250;
-
 }
 
 h4 {
@@ -60,21 +71,24 @@ h4 {
 
 } */
 
-.highlight {
-
-    font-weight: 700;
-
+figure {
+    margin: 0px;
+    position: relative;
 }
 
-.text-highlight {
-    color: #ed1250;
+.highlight {
     font-weight: 700;
+}
+
+.pink {
+    color: #ed1250;
 }
 
 p{
     font-size: 22px;
     line-height: 1.5;
 }
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -83,7 +97,7 @@ a {
 /*** Header ***/
 
 header {
-    background-image: url(assets/hero\ image.jpg);
+    background-image: url(assets/hero.jpeg);
     background-color:#fbc99d;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -136,11 +150,10 @@ header {
     align-items: center;
     margin-left: 15px;
     cursor: pointer;
+
 }
 
-
-
- .profile-img {
+.profile-img {
     height: 300px;
     width: 300px;
     border-style: solid ;
@@ -148,21 +161,8 @@ header {
     position: absolute;
     top: 250px;
     right: 200px;
-
 } 
 
-
-#summary-section,
-#tech-section,
-#featured-projects-section,
-#other-projects-section,
-#my-thoughts-section,
-#skills-section {
-    width: auto;
-    padding: 50px 30px;
-    margin: 0 auto;
- 
-}
 
 /*** SUMMARY SECTION ***/
 
@@ -176,12 +176,11 @@ header {
     justify-content: center;
 }
 
- .my-pitch {
+.my-pitch {
    line-height: 35px;
    width: 60%;
    text-align: left;
    font-family: 'Montserrat', sans-serif;
-   
 } 
 
 /*** TECH SECTION ***/
@@ -224,17 +223,9 @@ header {
  
 
 .card-img {
-   
     width: 100%;
     height: 250px;
-
 } 
-
-
-figure {
-    margin: 0px;
-    position: relative;
-}
 
 .project-card figcaption {
     position: absolute;
@@ -252,8 +243,6 @@ figure {
     display: block;
     margin: 10px 0 0 0;
     font-size: 14px;
-
-
 }
 
 .project-card-info {
@@ -268,10 +257,7 @@ figure {
     text-align: center;
     border-radius: 5px;
     background-color:#ed125045;
-  }
-
-
-
+}
 
 /*** OTHER PROJECTS SECTION ***/
 
@@ -283,38 +269,37 @@ figure {
 
 a:link {
     text-decoration: none;
-  }
+}
   
-  a:visited {
+a:visited {
     text-decoration: none;
     color: #042f4b;
-  }
+}
   
-  a:hover {
+a:hover {
     text-decoration: underline;
     color: #ed1250;
-  }
+}
   
-  a:active {
+a:active {
     text-decoration: underline;
-  } 
+} 
 
 
-  .other-projects-info .project-tags {
-      display: block;
-      margin: 20px 0;
-      font-size: 14px;
-
+.other-projects-info .project-tags {
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
 }
 
-  .other-projects .project-tags div {
+.other-projects .project-tags div {
     display: inline-block;
     margin: 0%;
     padding: 6px 6px;
     text-align: center;
     border-radius: 5px;
     background-color:#ed125045;
-  }
+}
   
 /*** MY THOUGHTS SECTION ***/
 
@@ -322,7 +307,6 @@ a:link {
     display: flex;
     flex-direction: column;
     background-color:#EFEBE9; 
-
 }  
   
 .my-thoughts-container {
@@ -330,7 +314,6 @@ a:link {
     flex-direction: row;
     justify-content: center;
     flex-wrap:wrap;
-
 } 
 
 .article-card {
@@ -340,13 +323,11 @@ a:link {
     flex-wrap: wrap;
     width: 400px;
     margin: 0px 8px;
-
 }
 
 .article-img {
     height: 200px;
     width: 400px;
-
 }    
 
 .article-headline {
@@ -355,17 +336,11 @@ a:link {
     font-weight: 700;
 } 
 
-
 .article-caption {
     margin: 15px 0;
     color: #000;
     line-height: 1.5;
-
 }
-
-
-
-
 
 /*** SKILLS SECTION ***/
 
@@ -373,7 +348,6 @@ a:link {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 } 
 
 .skills-container {
@@ -397,11 +371,7 @@ a:link {
 
 /*** FOOTER SECTION ***/
 
-footer .icon-container {
-   position: unset;
-   margin-top: 30px;
-    
-}
+
 
 footer {
     height: 400px;
@@ -410,7 +380,6 @@ footer {
     padding: 30px 0;
     background-color:#042f4b;
     text-align: center;
-    color: #fbc99d;
     line-height: 35px;
     display: flex;
     flex-direction: column;
@@ -418,31 +387,63 @@ footer {
     align-items: center;
 }
 
+footer * {
+    color: #FFF;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
 footer h3 {
-    color: #FFF;
     font-size: 32px;
-  }
-  
-  footer h4, footer p, .my-emil {
-    color: #FFF;
+}
+
+footer p {
+    font-size: medium;
+}
+
+footer h4, footer p, .my-email {   
     margin: 8px 0;
-  }
-  
+}
 
+.footer-icon-container {
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#icon-linkedin, #icon-stackoverflow, #icon-github {
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: #FFF solid 2px;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
 
+}
+#icon-linkedin:hover, #icon-stackoverflow:hover, #icon-github:hover {
+    border-color: #ed1250;; 
+}
 
+#icon-linkedin {
+    background-image: url(assets/icon-linkedin.svg);
+}
 
+#icon-stackoverflow {
+    background-image: url(assets/icon-stackoverflow.svg);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#icon-github {
+    background-image: url(assets/icon-github.svg);
+}
