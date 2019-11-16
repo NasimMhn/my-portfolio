@@ -20,12 +20,12 @@ h2 {
     background-color: #ed1250;
     color: #fff6da;
     align-self: center;
+    text-align: center;
     display: inline-block;
     border-radius: 10px;
     margin: 0 0 50px 0;
     padding: 0px 10px;
     font-size: 35px;
-    white-space: nowrap;
 }
 
 h3 { 
@@ -526,7 +526,7 @@ footer #icon-github {
     }
 
     h2 { 
-        font-size: 23px;
+        font-size: 28px;
         margin-bottom: 20px;
     }
 
@@ -590,12 +590,8 @@ footer #icon-github {
         line-height: 40px;
     }
 
-    .footer-icon-container {
-        margin-top: 20px;
-        width: 300px;
-        display: flex;
-        justify-content: space-evenly;
-    }
+
+
     #summary-section,
     #tech-section,
     #featured-projects-section,
@@ -605,6 +601,27 @@ footer #icon-github {
         width: auto;
         padding: 50px 10px;
         margin: 0 0;
-}
+    }
+    
+    .skills-container h4,
+    .skills-container div {
+        font-size: 18px;
+    }
+
+    .footer-icon-container {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    footer #icon-linkedin, 
+    footer #icon-stackoverflow, 
+    footer #icon-github {
+        height: 30px;
+        width: 30px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
 
 }
