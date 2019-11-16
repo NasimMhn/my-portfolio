@@ -8,29 +8,10 @@ body {
 }
    
 
-.container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;    
-}
-
-#summary-section,
-#tech-section,
-#featured-projects-section,
-#other-projects-section,
-#my-thoughts-section,
-#skills-section {
-    width: auto;
-    padding: 50px 30px;
-    margin: 0 auto;
-}
-
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     margin: 5px 0;
-  
 }
 
 h2 { 
@@ -43,7 +24,6 @@ h2 {
     margin: 0 0 50px 0;
     padding: 0px 10px;
     font-size: 35px;
-   
 }
 
 h3 { 
@@ -64,17 +44,68 @@ h4 {
     color: #ed1250;
 } 
 
-/* h5 { 
-    color: #ed1250;
-    align-self: center;
-    margin: 0%;
+p {
+    font-size: 22px;
+    line-height: 1.5;
+}
 
-} */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
 
 figure {
     margin: 0px;
     position: relative;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;    
+}
+
+#summary-section,
+#tech-section,
+#featured-projects-section,
+#other-projects-section,
+#my-thoughts-section,
+#skills-section {
+    width: auto;
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
+#icon-linkedin, 
+#icon-stackoverflow, 
+#icon-github {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    cursor: pointer;
+    border: #FFF solid 2px;
+    border-radius: 50%;
+}
+
+#icon-linkedin:hover, 
+#icon-stackoverflow:hover, 
+#icon-github:hover {
+    border-color: #ed1250;; 
+}
+
+#icon-linkedin {
+    background-image: url(assets/icon-linkedin.svg);
+}
+
+#icon-stackoverflow {
+    background-image: url(assets/icon-stackoverflow.svg);
+}
+
+#icon-github {
+    background-image: url(assets/icon-github.svg);
+}
+
+
 
 .highlight {
     font-weight: 700;
@@ -84,15 +115,7 @@ figure {
     color: #ed1250;
 }
 
-p{
-    font-size: 22px;
-    line-height: 1.5;
-}
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
 
 /*** Header ***/
 
@@ -110,7 +133,7 @@ header {
 
 .title {
     position: absolute; 
-    top: 170px;
+    top: 140px;
     left: 12%;
     width: 35%; 
 }
@@ -132,24 +155,29 @@ header {
     margin: 5px 0;
 }
 
-.icon-container {
+.header-icon-container {
     display: flex;
-    height: 70px;
+    justify-content: space-between;
     position: absolute;
-    top: 110px;
+    top: 160px;
     right: 200px; 
+    width: 300px;
+    
 }
 
-.icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid white;
+.header-icon {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-left: 15px;
-    cursor: pointer;
+    width: 75px;
+    height: 75px;
+}
+
+header #icon-linkedin, 
+header #icon-stackoverflow, 
+header #icon-github {
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -168,13 +196,10 @@ header {
 
 #summary-section {
     background: #EFEBE9;
-} 
-
-.pitch-div {
     display: flex;
-    flex-direction: unset;
+    flex-direction: row;
     justify-content: center;
-}
+} 
 
 .my-pitch {
    line-height: 35px;
@@ -187,12 +212,15 @@ header {
 
 
 #tech-section {
-    width: 70%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #tech-section p {
     font-family: 'Montserrat', sans-serif;
+    width: 60%;
 }
 
 
@@ -420,30 +448,11 @@ footer h4, footer p, .my-email {
     align-items: center;
 }
 
-#icon-linkedin, #icon-stackoverflow, #icon-github {
+footer #icon-linkedin, 
+footer #icon-stackoverflow, 
+footer #icon-github {
     height: 60px;
     width: 60px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    border: #FFF solid 2px;
-    border-radius: 50%;
     padding: 20px;
     margin-bottom: 10px;
-
-}
-#icon-linkedin:hover, #icon-stackoverflow:hover, #icon-github:hover {
-    border-color: #ed1250;; 
-}
-
-#icon-linkedin {
-    background-image: url(assets/icon-linkedin.svg);
-}
-
-#icon-stackoverflow {
-    background-image: url(assets/icon-stackoverflow.svg);
-}
-
-#icon-github {
-    background-image: url(assets/icon-github.svg);
 }
