@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     min-height: 100vh;
+    min-width: 500px;
     font-size: 20px;
 }
    
@@ -24,6 +25,7 @@ h2 {
     margin: 0 0 50px 0;
     padding: 0px 10px;
     font-size: 35px;
+    white-space: nowrap;
 }
 
 h3 { 
@@ -54,6 +56,20 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ed1250;
+}
+
 figure {
     margin: 0px;
     position: relative;
@@ -78,7 +94,8 @@ figure {
 
 #icon-linkedin, 
 #icon-stackoverflow, 
-#icon-github {
+#icon-github,
+#icon-view {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -89,7 +106,8 @@ figure {
 
 #icon-linkedin:hover, 
 #icon-stackoverflow:hover, 
-#icon-github:hover {
+#icon-github:hover,
+#icon-view:hover {
     border-color: #ed1250;; 
 }
 
@@ -105,6 +123,9 @@ figure {
     background-image: url(assets/icon-github.svg);
 }
 
+#icon-view {
+    background-image: url(assets/icon-view.svg);
+}
 
 
 .highlight {
@@ -247,13 +268,17 @@ header #icon-github {
     font-size: 20px;
     width: 400px;
     margin: 10px 10px;
-}  
- 
+}
 
 .card-img {
     width: 100%;
     height: 250px;
-} 
+    filter: brightness(50%);
+}
+
+.card-img:hover {
+    filter: brightness(100%);
+}
 
 .project-card figcaption {
     position: absolute;
@@ -262,26 +287,29 @@ header #icon-github {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
+    font-size: 30px;
     color:#fff ;
     border-radius: 10px;
     padding: 5px;
+    z-index: 1;
 }    
-
-.project-card-info .project-tags {
-    display: block;
-    margin: 10px 0 0 0;
-    font-size: 14px;
-}
 
 .project-card-info {
     line-height: 25px;
     margin-top: 15px;
+    text-align: justify;
 } 
 
-.project-card-info .project-tags div {
-    display: inline-block;
+.project-tags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.project-tags div {
     margin: 0 5px 5px 0;
-    padding: 6px 6px;
+    padding: 2px 2px;
     text-align: center;
     border-radius: 5px;
     background-color:#ed125045;
@@ -294,22 +322,18 @@ header #icon-github {
     flex-direction: column;
     height: auto;
 } 
-
-a:link {
-    text-decoration: none;
-}
   
-a:visited {
+#other-projects-section a:visited {
     text-decoration: none;
     color: #042f4b;
 }
   
-a:hover {
+#other-projects-section a:hover {
     text-decoration: underline;
     color: #ed1250;
 }
   
-a:active {
+#other-projects-section a:active {
     text-decoration: underline;
 } 
 
@@ -376,12 +400,13 @@ a:active {
     display: flex;
     flex-direction: column;
     text-align: center;
+
 } 
 
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 50px;
+    grid-column-gap: 90px;
     line-height: 40px;
 }
  
@@ -455,4 +480,110 @@ footer #icon-github {
     width: 60px;
     padding: 20px;
     margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 660px) and (max-width: 1100px) {
+    .title {
+        top: 150px;
+        left: 5%;
+        width: 50%; 
+    }
+    
+    .title h1 {
+        font-size: 60px;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    .header-icon-container {
+        width: 200px;
+        top: 160px;
+        right: 5%; 
+        
+        
+    }
+    .header-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .profile-img {
+        height: 200px;
+        width: 200px;
+
+        top: 250px;
+        right: 5%; 
+    } 
+    .skills-container {
+        grid-column-gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 { 
+
+        font-size: 28px;
+    }
+
+    header {
+        text-align: center;
+    }
+    .title {
+        position: absolute; 
+        top: 130px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    .title h4 {
+        font-size: 22px;
+    }
+
+    .header-icon-container {
+        width: 300px;
+        top: 30px; 
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .profile-img {
+        height: 200px;
+        width: 200px;
+        top: 265px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .my-pitch {
+        width: 90%;
+     } 
+     
+     #tech-section p {
+         width: 90%;
+    }
+
+     .skills-container {
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 0px;
+        line-height: 40px;
+    }
+
 }
