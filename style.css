@@ -516,6 +516,9 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
     top: 250px;
     right: 5%;
   }
+  #summary-section div {
+    width: auto;
+  }
   .skills-container {
     grid-column-gap: 60px;
   }
