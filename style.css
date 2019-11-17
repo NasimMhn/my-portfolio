@@ -62,7 +62,7 @@ a:link {
 
 a:visited {
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 a:hover {
@@ -91,7 +91,7 @@ figure {
   width: 100%;
 }
 
-#summary-section p {
+#summary-section div {
   width: 850px;
   padding: 0px 10px;
 }
@@ -218,8 +218,9 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
 #summary-section {
   background: #EFEBE9;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .my-pitch {
