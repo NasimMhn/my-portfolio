@@ -1,3 +1,4 @@
+/* Desktop review style */
 
 body {
     color: #000;
@@ -18,7 +19,7 @@ h1 {
 h2 { 
     font-family: 'Montserrat', sans-serif;
     background-color: #ed1250;
-    color: #fff6da;
+    color: #fff;
     align-self: center;
     text-align: center;
     display: inline-block;
@@ -92,10 +93,10 @@ figure {
     margin: 0 auto;
 }
 
-#icon-linkedin, 
-#icon-stackoverflow, 
-#icon-github,
-#icon-view {
+.icon-linkedin, 
+.icon-stackoverflow, 
+.icon-github,
+.icon-view {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -104,26 +105,26 @@ figure {
     border-radius: 50%;
 }
 
-#icon-linkedin:hover, 
-#icon-stackoverflow:hover, 
-#icon-github:hover,
-#icon-view:hover {
+.icon-linkedin:hover, 
+.icon-stackoverflow:hover, 
+.icon-github:hover,
+.icon-view:hover {
     border-color: #ed1250;; 
 }
 
-#icon-linkedin {
+.icon-linkedin {
     background-image: url(assets/icon-linkedin.svg);
 }
 
-#icon-stackoverflow {
+.icon-stackoverflow {
     background-image: url(assets/icon-stackoverflow.svg);
 }
 
-#icon-github {
+.icon-github {
     background-image: url(assets/icon-github.svg);
 }
 
-#icon-view {
+.icon-view {
     background-image: url(assets/icon-view.svg);
 }
 
@@ -142,7 +143,7 @@ figure {
 
 header {
     background-image: url(assets/hero.jpeg);
-    background-color:#fbc99d;
+    background-color:#042f4b;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -176,6 +177,11 @@ header {
     margin: 5px 0;
 }
 
+.title .highlight {
+    font-weight: 700;
+    font-size: 28px;
+}
+
 .header-icon-container {
     display: flex;
     justify-content: space-between;
@@ -194,9 +200,9 @@ header {
     height: 75px;
 }
 
-header #icon-linkedin, 
-header #icon-stackoverflow, 
-header #icon-github {
+header .icon-linkedin, 
+header .icon-stackoverflow, 
+header .icon-github {
     width: 100%;
     height: 100%;
 
@@ -272,11 +278,11 @@ header #icon-github {
 
 .card-img {
     width: 400px;
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 .card-img:hover {
-    filter: brightness(100%);
+    filter: brightness(80%);
 }
 
 .project-card figcaption {
@@ -413,7 +419,7 @@ header #icon-github {
     font-size: 22px;
     font-weight: 700;
     margin: 10px 0;
-    color: #ed1250;
+    color: #B00C3B;
 } 
 
 
@@ -471,9 +477,9 @@ footer h4, footer p, .my-email {
     align-items: center;
 }
 
-footer #icon-linkedin, 
-footer #icon-stackoverflow, 
-footer #icon-github {
+footer .icon-linkedin, 
+footer .icon-stackoverflow, 
+footer .icon-github {
     height: 60px;
     width: 60px;
     padding: 20px;
@@ -615,9 +621,9 @@ footer #icon-github {
         justify-content: space-evenly;
     }
     
-    footer #icon-linkedin, 
-    footer #icon-stackoverflow, 
-    footer #icon-github {
+    footer .icon-linkedin, 
+    footer .icon-stackoverflow, 
+    footer .icon-github {
         height: 30px;
         width: 30px;
         padding: 20px;
