@@ -587,6 +587,7 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
   }
   #summary-section div {
     width: auto;
+    text-align: center;
   }
   .skills-container h4, .skills-container div {
     font-size: 18px;
