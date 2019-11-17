@@ -582,6 +582,9 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
     padding: 50px 10px;
     margin: 0 0;
   }
+  #summary-section div {
+    width: auto;
+  }
   .skills-container h4, .skills-container div {
     font-size: 18px;
   }
