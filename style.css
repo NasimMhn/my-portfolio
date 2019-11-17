@@ -57,7 +57,6 @@ a {
 }
 
 a:link {
-  text-decoration: none;
   color: black;
 }
 
@@ -67,7 +66,7 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #ed1250;
 }
 
@@ -83,9 +82,23 @@ figure {
 }
 
 #summary-section, #tech-section, #featured-projects-section, #other-projects-section, #my-thoughts-section, #skills-section {
-  width: auto;
-  padding: 50px 30px;
+  width: 850px;
+  padding: 50px 10px;
   margin: 0 auto;
+}
+
+#summary-section {
+  width: 100%;
+}
+
+#summary-section p {
+  width: 850px;
+  padding: 0px 10px;
+}
+
+#tech-section p {
+  padding: 0px 10px;
+  text-align: center;
 }
 
 .icon-linkedin, .icon-stackoverflow, .icon-github, .icon-view {
@@ -211,7 +224,6 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
 
 .my-pitch {
   line-height: 35px;
-  width: 60%;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
 }
@@ -227,7 +239,6 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
 
 #tech-section p {
   font-family: 'Montserrat', sans-serif;
-  width: 60%;
 }
 
 /*** FEATURED SECTION ***/
@@ -259,10 +270,6 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   filter: brightness(30%);
 }
 
-.card-img:hover {
-  filter: brightness(80%);
-}
-
 .project-card figcaption {
   position: absolute;
   text-align: center;
@@ -279,6 +286,14 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
 
 .project-card-info {
   margin-top: 15px;
+}
+
+.project-card-info a:visited {
+  color: black;
+}
+
+.project-card-info a:hover {
+  color: #ed1250;
 }
 
 .project-tags {
@@ -457,7 +472,23 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 660px) and (max-width: 1100px) {
+@media only screen and (min-width: 941px) and (max-width: 1080px) {
+  .profile-img {
+    height: 300px;
+    width: 300px;
+    right: 5%;
+  }
+  .header-icon-container {
+    right: 5%;
+  }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 940px) {
+  #tech-section, #featured-projects-section, #other-projects-section, #my-thoughts-section, #skills-section {
+    width: auto;
+    padding: 50px 10px;
+    margin: 0 auto;
+  }
   .title {
     top: 150px;
     left: 5%;
@@ -539,12 +570,6 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
     left: 0;
     margin-left: auto;
     margin-right: auto;
-  }
-  .my-pitch {
-    width: 90%;
-  }
-  #tech-section p {
-    width: 90%;
   }
   .skills-container {
     grid-template-columns: repeat(3, 1fr);
