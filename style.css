@@ -473,6 +473,8 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
   margin-bottom: 10px;
 }
 
+/*** Media queries ***/
+
 @media only screen and (min-width: 941px) and (max-width: 1080px) {
   .profile-img {
     height: 300px;
