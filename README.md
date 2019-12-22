@@ -1,6 +1,6 @@
 
 
-# Project 8 @ Technigo Bootcamp - To build our own portfolio
+# Project 8 @ Technigo Bootcamp  - Build our own portfolio
 
 At the end of the sprint two, it was time to build own portfolio by focusing on accessibility and testing.
 
