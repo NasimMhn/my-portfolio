@@ -81,7 +81,7 @@ figure {
   background-color: #fff;
 }
 
-#summary-section, #tech-section, #featured-projects-section, #other-projects-section, #my-thoughts-section, #skills-section {
+#summary-section, #tech-section, #featured-projects-section, #other-projects-section, #my-thoughts-section, #more-thoughts-section, #skills-section {
   width: 850px;
   padding: 50px 10px;
   margin: 0 auto;
@@ -365,6 +365,10 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   flex-wrap: wrap;
 }
 
+.more-thoughts {
+  align-self: flex-start;
+}
+
 .article-card {
   display: flex;
   flex-direction: row;
@@ -388,6 +392,12 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   margin: 15px 0;
   color: #000;
   line-height: 1.5;
+} 
+
+#my-thoughts-section .subtitle{
+  font-size: 28px;
+  background-color:#EFEBE9 ;
+  color:#ed1250 ;
 }
 
 /*** SKILLS SECTION ***/
@@ -524,6 +534,10 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
   .skills-container {
     grid-column-gap: 60px;
   }
+
+  .more-thoughts {
+    align-self: center;
+  }
 }
 
 @media only screen and (max-width: 660px) {
@@ -582,7 +596,7 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
     grid-column-gap: 0px;
     line-height: 40px;
   }
-  #summary-section, #tech-section, #featured-projects-section, #other-projects-section, #my-thoughts-section, #skills-section {
+  #summary-section, #tech-section, #featured-projects-section, #other-projects-section, #my-thoughts-section, #more-thoughts-section, #skills-section {
     width: auto;
     padding: 50px 10px;
     margin: 0 0;
@@ -605,5 +619,8 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
     width: 30px;
     padding: 20px;
     margin-bottom: 10px;
+  }
+  .more-thoughts {
+    align-self: center;
   }
 }
