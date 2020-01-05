@@ -229,6 +229,28 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   font-family: 'Montserrat', sans-serif;
 }
 
+.my-pitch-style {
+  background-color: #ed1250;
+  display: inline-block;
+  height: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  margin-right: 0.8rem;
+  width: 40px;
+}
+
+.my-pitch-style::after {
+  background-color: #ed1250;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  left: 32px;
+  position: absolute;
+  top: -3px;
+  width: 8px;
+}
+
 /*** TECH SECTION ***/
 
 #tech-section {
@@ -392,12 +414,12 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   margin: 15px 0;
   color: #000;
   line-height: 1.5;
-} 
+}
 
-#my-thoughts-section .subtitle{
+#my-thoughts-section .subtitle {
   font-size: 28px;
-  background-color:#EFEBE9 ;
-  color:#ed1250 ;
+  background-color: #EFEBE9;
+  color: #ed1250;
 }
 
 /*** SKILLS SECTION ***/
@@ -534,7 +556,6 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
   .skills-container {
     grid-column-gap: 60px;
   }
-
   .more-thoughts {
     align-self: center;
   }
