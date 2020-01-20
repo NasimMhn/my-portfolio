@@ -14,6 +14,7 @@ At the end of the sprint two, it was time to build own portfolio by focusing on 
 
 - HTML
 - CSS
+- Responsivness
 - Accessibility and testing 
 
 
