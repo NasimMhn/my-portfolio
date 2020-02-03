@@ -397,6 +397,11 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.thoughts-links {
+  width: 100%
+}
+
 /* 
 .more-thoughts {
   align-self: flex-start;
@@ -537,7 +542,7 @@ footer .icon-linkedin, footer .icon-stackoverflow, footer .icon-github {
     padding: 50px 10px;
     margin: 0 auto;
   }
-   #featured-projects-section, #other-projects-section, #skills-section {
+  #featured-projects-section, #other-projects-section, #skills-section {
     width: 100%;
     padding: 50px 10px;
     margin: 0 auto;
