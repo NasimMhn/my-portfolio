@@ -82,7 +82,7 @@ figure {
 }
 
 #tech-section, #my-thoughts-section, #more-thoughts-section {
-  width: 850px;
+  width: 900px;
   padding: 50px 10px;
   margin: 0 auto;
 }
@@ -94,7 +94,7 @@ figure {
 }
 
 #summary-section div {
-  width: 850px;
+  width: 900px;
   padding: 0px 10px;
 }
 
@@ -280,7 +280,7 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
 .cards-container {
   display: flex;
   width: auto;
-  max-width: 850px;
+  max-width: 900px;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
