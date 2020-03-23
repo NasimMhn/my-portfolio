@@ -163,6 +163,7 @@ header {
 }
 
 .title p {
+  color: hsla(0, 1%, 39%, 0.118);
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
