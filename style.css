@@ -145,7 +145,8 @@ figure {
 
 header {
   background-image: url(assets/hero.jpeg);
-  background-color: #042f4b;
+  /* background-color: #042f4b; */
+  background-color: #283e4a;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,14 +163,40 @@ header {
   width: 35%;
 }
 
+/* Paragraph Animation */
+
 .title p {
-  color: hsla(0, 1%, 39%, 0.118);
   color: #FFF;
+  display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
-  margin-top: 0;
+  overflow: hidden;
+  border-right: .15em solid #ed1250;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: #ed1250;
+  }
+}
+
+/* --------------------- */
 
 .title h4 {
   color: #FFF;
@@ -235,7 +262,7 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
 .my-pitch-style {
   background-color: #ed1250;
   display: inline-block;
-  height: 2px;
+  height: 3px;
   margin-bottom: 6px;
   position: relative;
   margin-right: 0.8rem;
@@ -247,7 +274,7 @@ header .icon-linkedin, header .icon-stackoverflow, header .icon-github {
   border-radius: 50%;
   content: "";
   display: inline-block;
-  height: 8px;
+  height: 9px;
   left: 32px;
   position: absolute;
   top: -3px;
